@@ -1,0 +1,43 @@
+# <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RGB Number Input</title>
+  <style>
+    /* Full screen RGB background animation */
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(270deg, #ff0000, #00ff00, #0000ff);
+      background-size: 600% 600%;
+      animation: rgb 10s ease infinite;
+      font-family: Arial, sans-serif;
+    }
+
+    @keyframes rgb {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Stylish number input */
+    .number-box {
+      padding: 15px 20px;
+      font-size: 22px;
+      border: none;
+      border-radius: 12px;
+      outline: none;
+      text-align: center;
+      width: 220px;
+      background: rgba(255,255,255,0.9);
+      box-shadow: 0px 4px 20px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <input type="number" class="number-box" placeholder="Enter number">
+</body>
+</html>
